@@ -4,7 +4,7 @@ layout: post
 title: LinkedIn Security Fail
 wordpress_url: http://joncanady.com/2009/01/linkedin-security-fail/
 ---
-One of the core tenets of web application security – though it probably applies elsewhere – is the concept of [information leakage](http://www.owasp.org/index.php/Top_10_2007-A6): the best line of defense is to not give the attacker anything to use against you.
+One of the core tenets of web application security &mdash; though it probably applies elsewhere &mdash; is the concept of [information leakage](http://www.owasp.org/index.php/Top_10_2007-A6): the best line of defense is to not give the attacker anything to use against you.
 
 Most of the time this is taken to mean things like not showing stack traces when an error occurs (PHP's default config, I'm looking at *you*).  
 
