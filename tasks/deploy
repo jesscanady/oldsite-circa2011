@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-jekyll && rsync -avz --delete _site/ blog:/pub/jcanady/joncanady.com/
+jekyll --no-auto && rsync -avz --delete _site/ blog:/pub/jcanady/joncanady.com/
