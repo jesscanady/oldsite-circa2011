@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>{{ page.title }} -- Jon Canady (dot com)</title>
+		<link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
+		<link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css" />
+		<link rel="alternate" type="application/atom+xml" href="/atom.xml">
+	</head>
+	<body>
+		{% include header.html %}
+		<div id="content">
+			<h1>{{ page.title }}</h1>
+			<h2>{{ page.date | date: "%b %d, %Y"  }}</h2>
+			
+			{% if page.wordpress_id %}
+			
+			<div id="alert">
+				<p>This is an older post imported from my previous Wordpress blog. If you
+				find any errors, <a href="mailto:jon@joncanady.com">let me 
+				know</a>.</p>
+			</div>
+			
+			{% endif %}
+			
+			{{content}}
+
+			<div>
+				{% if page.previous %}
+				<span>
+					<a rel="prev" href="{{ page.previous.url }}" 
+					title="View {{ page.previous.title }}"
+					>&larr; Previous: {{ page.previous.title }}</a>
+				</span>
+				{% endif %}
+				<br />
+				{% if page.next %}
+				<span>
+					<a rel="next" href="{{ page.next.url }}" 
+					title="View {{ page.next.title }}"
+					>Next: {{ page.next.title }} &rarr;</a>
+				</span>
+				{% endif %}
+			</div> 
+
+			{% include footer.html %}
+
+		</div>
+	</body>
+</html>

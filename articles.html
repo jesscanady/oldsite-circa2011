@@ -1,0 +1,13 @@
+---
+layout: about
+title: Bloggery
+---
+<h2>I've butchered the english language {{ site.posts.size }} times:</h2>
+ 
+<ul class="archive">
+{% for post in site.posts %}
+  <li>
+    {{ post.date | date: "%d %B %Y"  }} &mdash; <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+{% endfor %}
+</ul>

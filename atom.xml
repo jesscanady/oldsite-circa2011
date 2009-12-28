@@ -1,0 +1,28 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Jon Canady</title>
+ <subtitle>Now with more Canady</subtitle>
+ <link href="http://joncanady.com/atom.xml" rel="self"/>
+ <link href="http://joncanady.com/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://joncanady.com/</id>
+ <author>
+   <name>Jon Canady</name>
+   <email>jon@joncanady.com</email>
+ </author>
+ 
+ {% for post in site.posts limit: 15 %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://joncanady.com{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://joncanady.com{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+ 
+</feed>

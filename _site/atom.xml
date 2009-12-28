@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Jon Canady</title>
+ <subtitle>Now with more Canady</subtitle>
+ <link href="http://joncanady.com/atom.xml" rel="self"/>
+ <link href="http://joncanady.com/"/>
+ <updated>2009-12-27T23:37:11-05:00</updated>
+ <id>http://joncanady.com/</id>
+ <author>
+   <name>Jon Canady</name>
+   <email>jon@joncanady.com</email>
+ </author>
+ 
+ 
+ <entry>
+   <title>HTML 5 Video Annoying, Usable Today</title>
+   <link href="http://joncanady.com/2009/12/21/HTML-5-Video-Annoying-Usable/"/>
+   <updated>2009-12-21T00:00:00-05:00</updated>
+   <id>http://joncanady.com/2009/12/21/HTML-5-Video-Annoying-Usable</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://daringfireball.com&quot;&gt;Gruber&lt;/a&gt; &lt;a href=&quot;http://daringfireball.net/2009/12/html5_video_unusable&quot;&gt;suggests&lt;/a&gt; that HTML 5 video is &quot;effectively unusable&quot; for the following two reasons:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;It doesn't allow poster images.&lt;/li&gt;
+&lt;li&gt;Both audio and video always auto-buffer instead of waiting for a click.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Our hero gets past the first issue with some Javascript hackery, which also fixes the second issue.  So, completely usable before (with a few issues), 100% usable afterwards.&lt;/p&gt;
+
+&lt;p&gt;There is the ever-present IE issue -- no version of Internet Explorer as of this writing supports &lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;audio&amp;gt;&lt;/code&gt; -- but this isn't at all an issue for Gruber.&lt;br/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The effective conclusion to Gruber's &quot;effectively unusable&quot; piece is &quot;I used it for my &lt;a href=&quot;http://daringfireball.net/misc/2009/12/user_guide_demos&quot;&gt;PastryKit video page&lt;/a&gt; but I had to use Javascript and create two versions of each video and I don't like that.&quot;&lt;/p&gt;
+
+&lt;p&gt;Which seems, y'know, &lt;em&gt;usable&lt;/em&gt; to me.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>This was a triumph.</title>
+   <link href="http://joncanady.com/2009/12/18/this-was-a-triumph/"/>
+   <updated>2009-12-18T00:00:00-05:00</updated>
+   <id>http://joncanady.com/2009/12/18/this-was-a-triumph</id>
+   <content type="html">&lt;p&gt;I'm making a note here, huge success.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt;   &lt;span class=&quot;vi&quot;&gt;@posts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;%w(one two three)&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Two Simple Rules for Screencasting</title>
+   <link href="http://joncanady.com/2009/11/20/two-simple-rules-for-screencasting/"/>
+   <updated>2009-11-20T00:00:00-05:00</updated>
+   <id>http://joncanady.com/2009/11/20/two-simple-rules-for-screencasting</id>
+   <content type="html">&lt;p&gt;During the process of trying to figure out what &lt;a href=&quot;http://compass-style.org/&quot;&gt;Compass&lt;/a&gt; is, I tried to watch the official Compass &lt;a href=&quot;http://wiki.github.com/chriseppstein/compass&quot;&gt;screencast&lt;/a&gt;. This was a mistake. Thinking of writing an introductory screencast for your product? Learn from their mistakes.&lt;/p&gt;
+
+&lt;h3&gt;Keep It Short&lt;/h3&gt;
+
+&lt;p&gt;No shit, the Compass screencast is &lt;em&gt;an hour long.&lt;/em&gt;  The only people who are going to watch that are people with a vested interest in the project, who presumably already know the material.&lt;/p&gt;
+
+&lt;p&gt;Keep your screencasts to around five minutes. You aren't  &lt;a href=&quot;http://peepcode.com/&quot;&gt;PeepCode&lt;/a&gt;, and this thing isn't your documentation. If you can't keep a basic explanation of your product/service down to five minutes, you have bigger problems.&lt;/p&gt;
+
+&lt;h3&gt;Show, Don't Tell&lt;/h3&gt;
+
+&lt;p&gt;Up until about 2:20, the Compass screencast doesn't even change, and it takes another minute before there's any actual content on the screen. If the viewer wanted to read a thorough explanation of your product, they would have read the &quot;about&quot; page.&lt;/p&gt;
+
+&lt;p&gt;Start with a brief intro on what your product is, then jump right into the demonstration. Impress the viewer quickly and keep them impressed.&lt;/p&gt;
+
+&lt;h3&gt;It's That Simple&lt;/h3&gt;
+
+&lt;p&gt;That's all you need for an effective screencast. It's almost a definition: &quot;short&quot; and &quot;demonstration&quot;. It's hard to go wrong.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How To Fix a Shitty Project</title>
+   <link href="http://joncanady.com/2009/11/18/how-to-fix-a-shitty-project/"/>
+   <updated>2009-11-18T00:00:00-05:00</updated>
+   <id>http://joncanady.com/2009/11/18/how-to-fix-a-shitty-project</id>
+   <content type="html">&lt;p&gt;Way back in the Dark Ages of the Internet (2000), Joel Spolsky &lt;a href=&quot;http://www.joelonsoftware.com/articles/fog0000000069.html&quot;&gt;wrote&lt;/a&gt; of Netscape's impending version 6 release:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;It's a bit smarmy of me to criticize them for waiting so long between releases. They didn't do it on purpose, now, did they?&lt;/p&gt;
+
+&lt;p&gt;Well, yes. They did. They did it by making the &lt;strong&gt;single worst strategic mistake&lt;/strong&gt; that any software company can make:&lt;/p&gt;
+
+&lt;p&gt;They decided to rewrite the code from scratch.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Most developers can instantly conjure up at least one project they'd love to rewrite from the ground up.  This time, you'll use the right language, the right libraries, the right style -- you'll &lt;a href=&quot;http://www.jwz.org/doc/cadt.html&quot;&gt;do it &lt;em&gt;right&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Don't do it.  It's a horrible idea.  Now you've reset your entire timeline back to zero, and you don't know &lt;em&gt;when&lt;/em&gt; you'll be done.  (Say, where's &lt;a href=&quot;http://macromates.com&quot;&gt;TextMate 2&lt;/a&gt;?)  Not to mention the regression bugs you'll undoubtedly let slip in.&lt;/p&gt;
+
+&lt;p&gt;Instead of rewriting the whole thing from nothing, &lt;strong&gt;incrementally fix things.&lt;/strong&gt;  Don't commit a &lt;em&gt;single&lt;/em&gt; change that doesn't leave the code better than you found it.  Move business logic out of controllers and into models.  Changing a feature?  Cover the whole feature with tests.&lt;br/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Eventually, you'll find you've rewritten all the shitty parts of the project anyway and it's not so bad anymore.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Multi-Developer Git Suggestions</title>
+   <link href="http://joncanady.com/2009/11/08/multi-developer-git-suggestions/"/>
+   <updated>2009-11-08T00:00:00-05:00</updated>
+   <id>http://joncanady.com/2009/11/08/multi-developer-git-suggestions</id>
+   <content type="html">&lt;p&gt;Git's pretty simple to use when it's just you and your Github repo, but as developers increases, complexity increases.&lt;/p&gt;
+
+&lt;h2&gt;Each Developer Has Her Own Branch&lt;/h2&gt;
+
+&lt;p&gt;Make each developer on the team maintain their own branch where their changes initially go before being merged into &lt;code&gt;master&lt;/code&gt;. Bonus: you can vet new developer's changes before they get pushed into whatever the production branch is.&lt;/p&gt;
+
+&lt;p&gt;So, here's what I do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jonc$ git checkout -b jonc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Create and switch to the branch &lt;code&gt;jonc&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jonc$ git checkout master
+jonc$ git merge jonc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Merge all the changes from &lt;code&gt;jonc&lt;/code&gt; into &lt;code&gt;master&lt;/code&gt;
+(This, of course, works in reverse, if you need to pull new stuff from &lt;code&gt;master&lt;/code&gt; into your personal branch)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jonc$ git push origin jonc:refs/heads/jonc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now the &lt;code&gt;jonc&lt;/code&gt; branch exists on Github.  Anyone else that wants to check out my work is free to do so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;otherdev$ git checkout --track -b jonc origin/jonc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Features Have Their Own Branches&lt;/h2&gt;
+
+&lt;p&gt;If a feature is going to take longer than one sitting to completely implement -- including tests -- then it goes in its own branch.  Every time I've excepted this rule I've regretted it later.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jonc$ git checkout -b bugfix_553
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you're going to be collaborating on something with another developer, create it remotely first, then both of you can push/pull from the get-go.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jonc$ git push origin origin:refs/heads/bugfix_553
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That creates the remote branch, and any developer that wants to start working on it does the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jonc$ git fetch origin    
+jonc$ git checkout --track -b bugfix_553 origin/bugfix_553
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When you're on the &lt;code&gt;bugfix_553&lt;/code&gt; branch, pushes and pulls go to and from there instead of &lt;code&gt;master&lt;/code&gt;.  When ready, you merge it into master as usual.  Once you're 100% done with the branch, delete it as normal (&lt;code&gt;git branch -d bugfix_553&lt;/code&gt;) and remove it from the server if necessary:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jonc$ git push origin :heads/bugfix_553
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;No, that command isn't intuitive in the slightest.&lt;/p&gt;
+
+&lt;h2&gt;Production Always Builds&lt;/h2&gt;
+
+&lt;p&gt;The production branch should &lt;em&gt;never&lt;/em&gt; have code in it that breaks.  Hopefully it's got a good test suite, and with any luck it doesn't incur much technical debt, but at the very least it needs to:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Run&lt;/li&gt;
+&lt;li&gt;Produce correct output&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;This means that deployments can happen whenever. Developing directly in the production branch or merging changes prematurely means that if critical bugfixes need to go out &lt;strong&gt;now&lt;/strong&gt; you can handle that without having to clean up messes first.&lt;/p&gt;
+
+&lt;p&gt;Developers that consistently push bad code into the production branch should be beaten. Having some Continuous Integration process watching that branch isn't a bad idea either.&lt;/p&gt;
+
+&lt;p&gt;(I've always used &lt;code&gt;master&lt;/code&gt; as the production branch, but use whatever makes you feel good.)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Flickr is Not Your Backup Service</title>
+   <link href="http://joncanady.com/2009/08/07/flickr-is-not-your-backup-service/"/>
+   <updated>2009-08-07T00:00:00-04:00</updated>
+   <id>http://joncanady.com/2009/08/07/flickr-is-not-your-backup-service</id>
+   <content type="html">&lt;p&gt;Dude's Flickr account was compromised, his password changed, and then his account terminated.  &lt;a href=&quot;http://notnixon.com/post/158066658/fuck-flickr-support-i-want-this-to-spread-like&quot;&gt;He seems upset.&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;I want this to spread like wildfire. I want people to know that Flickr, their customer service and overall infrastructure is incredibly disappointing and it needs to be fixed ASAP.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;...and...&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;There were 3,000+ photos on my Flickr photostream from 2004-present. Thousands and thousands of dollars spent on film and developing were pumped into that account and it vanishes within minutes and it’s been days and still I’ve found no resolution with my case.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Flickr is an awesome web app for sharing your photos with the world, but it is &lt;em&gt;not&lt;/em&gt; an archival service. Flickr happens to host a load of digital images on its servers as effect of providing these photos to the world, not for the purpose of storing them in perptuity.&lt;/li&gt;
+&lt;li&gt;Dude spent &quot;thousands and thousands of dollars on film and developing&quot; and  didn't keep local backups of his work? Did he just upload the files to Flickr and then delete them? Come on.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;On the assumption that he didn't keep backups: &lt;a href=&quot;http://www.jwz.org/doc/backups.html&quot;&gt;it's not that hard&lt;/a&gt;. If backups are kept, than at most a bunch of metadata was lost, but then the argument isn't &quot;I wasted a bunch of money developing photos that you deleted&quot; but &quot;I spent hundreds of hours tagging and describing and all for nothing&quot; -- that sucks, but that isn't nearly worth this level of bitchitude.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Awesome One-Liners</title>
+   <link href="http://joncanady.com/2009/06/10/awesome-one-liners/"/>
+   <updated>2009-06-10T00:00:00-04:00</updated>
+   <id>http://joncanady.com/2009/06/10/awesome-one-liners</id>
+   <content type="html">&lt;p&gt;If you just used the built-in Rails generators to create a new controller and you got a bunch of &lt;code&gt;.html.erb&lt;/code&gt; files, you'll naturally want &lt;code&gt;.html.haml&lt;/code&gt; files instead. Bash can fix those files right fast:&lt;/p&gt;
+
+&lt;script src=&quot;http://gist.github.com/127632.js&quot;&gt;&lt;/script&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>iPhone Lock Code and iTunes 8.2</title>
+   <link href="http://joncanady.com/2009/06/01/iphone-lock-code-and-itunes-82/"/>
+   <updated>2009-06-01T00:00:00-04:00</updated>
+   <id>http://joncanady.com/2009/06/01/iphone-lock-code-and-itunes-82</id>
+   <content type="html">&lt;p&gt;Installed the iTunes 8.2 update, docked my phone, and saw a new error message:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/iphone_sync.png&quot; alt=&quot;iTunes 8.2: cannot unlock due to passcode&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I don't know how to feel about this.  The security-conscious (read: paranoid) part of me thinks it's probably a good idea to not let just anyone do a sync of your locked and protected iPhone.  The lazy jerk part of me that just wants to slap his phone in a dock and have the damn thing sync is a little miffed right now.&lt;/p&gt;
+
+&lt;p&gt;I wonder how helpful this really is?  Is the control built into iTunes or the iPhone itself?  Could someone &lt;em&gt;not&lt;/em&gt; using iTunes pull a dump down of the iPhone's HDD?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Know when to Fold</title>
+   <link href="http://joncanady.com/2009/05/19/know-when-to-fold/"/>
+   <updated>2009-05-19T00:00:00-04:00</updated>
+   <id>http://joncanady.com/2009/05/19/know-when-to-fold</id>
+   <content type="html">&lt;p&gt;From Phillip Greenspun's &quot;&lt;a href=&quot;http://blogs.law.harvard.edu/philg/2009/05/18/ruby-on-rails-and-the-importance-of-being-stupid/&quot;&gt;Ruby on Rails and the importance of being stupid&lt;/a&gt;&quot;, a comparison between a hastily thrown together .NET site and a hastily thrown together Rails site:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;How could a “slice” with 800 MB of RAM run out of memory and start swapping when all it was trying to do was run an HTTP server and a scripting language interpreter? Only a dinosaur would use SQL as a query language. Much better to pull entire tables into Ruby, the most beautiful computer language ever designed, and filter down to the desired rows using Ruby and its “ActiveRecord” facility.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Now, this is &lt;em&gt;Greenspun&lt;/em&gt;; he knows when he's writing a biased, one-sided article to make a point.  I'm not certain where the comparison to .NET fits in, but otherwise there's a fine point present.&lt;/p&gt;
+
+&lt;h2&gt;Know when to hold 'em&lt;/h2&gt;
+
+&lt;p&gt;Rails, like every other framework in programming, wants to take something inherently complex and make it simple.  And, starting out, there's no reason not to use every time-saver you can get: use #find, take advantage of associations, use &lt;code&gt;script/runner&lt;/code&gt; to power your cron runs, why not?  Any time you take second-guessing the framework unnecessarily is time you're not spending solving your business problem.&lt;/p&gt;
+
+&lt;h2&gt;Know when to fold 'em&lt;/h2&gt;
+
+&lt;p&gt;The honeymoon will eventually be over and your site will start to bog under the pressure.  Maybe you need some database indices, which ActiveRecord's migrations won't easily provide for you.  Perhaps ActiveRecord is generating sub-optimal queries and you need to step in and (shock) write some SQL.  In fact, &lt;code&gt;script/runner&lt;/code&gt; loading your entire Rails environment just to run a cronjob may not be the speediest solution.&lt;/p&gt;
+
+&lt;p&gt;When these happen, &lt;strong&gt;go with it&lt;/strong&gt;.  If you don't already know about how a column index works or how to hand-craft a funky JOIN, then go learn.  Write cron scripts that just execute some SQL against the server.  Don't futz around with more RAM you don't need, or trying to shoehorn your problems into Rails' solutions.  Instead, find your problem points, and don't hesitate to abandon your framework in places if it's holding you back.&lt;/p&gt;
+
+&lt;p&gt;With apologies to Kenny Rogers.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Can't locate Error.pm in @INC fix</title>
+   <link href="http://joncanady.com/2009/04/08/cant-locate-errorpm-in-inc-fix/"/>
+   <updated>2009-04-08T00:00:00-04:00</updated>
+   <id>http://joncanady.com/2009/04/08/cant-locate-errorpm-in-inc-fix</id>
+   <content type="html">&lt;p&gt;Went to do a git-remote today on a new server at &lt;a href=&quot;http://innova-partners.com&quot;&gt;the office&lt;/a&gt; and got a funky Perl error that was about thirty lines long and started with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Can't locate Error.pm in @INC
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is on Fedora 8 (yes, it's been EOL'd), but if you run into this issue, get the perl-Error package (since we're Fedora, it was a &lt;code&gt;yum install perl-Error&lt;/code&gt; away) and you're set!&lt;/p&gt;
+
+&lt;p&gt;(Shamelessly poached from &lt;a href=&quot;https://bugzilla.redhat.com/show_bug.cgi?id=356521&quot;&gt;this bug report&lt;/a&gt;)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Dewey's Pizza on 5th</title>
+   <link href="http://joncanady.com/2009/03/31/deweys-pizza-on-5th/"/>
+   <updated>2009-03-31T00:00:00-04:00</updated>
+   <id>http://joncanady.com/2009/03/31/deweys-pizza-on-5th</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/jcanady/sets/72157616146663644&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3640/3399666645_f391fe7c29_m.jpg&quot; title=&quot;1/2 Hawaiian, 1/2 Bronx Bomber&quot; style=&quot;float: left; margin-right: 5px;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Last night the Mrs. and I decided to try &lt;a href=&quot;http://www.deweyspizza.com/&quot;&gt;Dewey's Pizza&lt;/a&gt; in Grandview for dinner.  Ever since my trip to New York last year for the OWASP 2008 Security Conference, I've tried to find a good New York-style pizza in Columbus.&lt;br/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;As an aside: most pizza in Columbus is thin-crust, crispy, with relatively little actual crust surrounding the pizza, and cut into squares.  Dewey's is definitely New York-style pizza: cut in pie-shape slices (you'd be shocked at how this change the pizza-eating experience), a generous amount of crust around the pizza, with softer, more flexible crust.&lt;br/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;We ordered a 1/2 Hawaiian (red sauce, pineapple, canadian bacon), 1/2 Bronx Bomber (red sauce, pepperoni, sausage, mushroom, bell pepper, onion, black olive).  Red sauce is to differentiate here from Dewey's &quot;White Sauce&quot; (no jokes), a white pizza-style cheese-based sauce.  Both were delicious: the ingredients were fresh, the crust was chewy and flavorful (but not dominating, it's the &lt;em&gt;crust&lt;/em&gt; for goodness' sake), and the slices were just the right size.&lt;/p&gt;
+
+&lt;p&gt;This ends the portion of our show where I talk like I'm some kind of pizza connoisseur.&lt;/p&gt;
+
+&lt;p&gt;So what else?  Dewey's has a small but excellent selection of beers on tap:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Scrimshaw Pilsner (California)&lt;/li&gt;
+&lt;li&gt;Rogue Dead Guy Ale (Oregon)&lt;/li&gt;
+&lt;li&gt;Dogfish Head 60 Minute IPA (Delaware)&lt;/li&gt;
+&lt;li&gt;Columbus Brewing Co. Seasonal (Ohio)&lt;/li&gt;
+&lt;li&gt;Brooklyn Brown (New York)&lt;/li&gt;
+&lt;li&gt;Bells Seasonal (Michigan)&lt;/li&gt;
+&lt;li&gt;Sierra Nevada Pale Ale (California)&lt;/li&gt;
+&lt;li&gt;Guinness (Ireland)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;That afternoon I'd had some dental work done (filling cavities) and my gums were a little sore, so I chose to go with the Guinness, which I knew wasn't going to bother me any.&lt;/p&gt;
+
+&lt;p&gt;The service is pretty damn fine, too.  When we first sat down, our server asked if we'd ever eaten before, and explained the various sauces and seasonal options on the menu.  Having grown up on places that &lt;em&gt;don't&lt;/em&gt; explain these types of things, this is still refreshing every time it happens.  Kelli even noticed that they had about six servers on the floor for maybe 15 customers: some of them were standing around, but I bet when the place gets busy they've got it covered.  And Kelli never wanted for a water refill.&lt;/p&gt;
+
+&lt;p&gt;That got a little more detailed than I was planning, but &lt;a href=&quot;http://techfoodhorsepower.com/&quot;&gt;someone&lt;/a&gt; demanded I do a full review.  Also &lt;a href=&quot;http://www.flickr.com/photos/jcanady/sets/72157616146663644&quot;&gt;another &lt;em&gt;five&lt;/em&gt; awesome photos&lt;/a&gt; if that's your thing.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Awesome Stuff I Read</title>
+   <link href="http://joncanady.com/2009/03/04/awesome-stuff-i-read/"/>
+   <updated>2009-03-04T00:00:00-05:00</updated>
+   <id>http://joncanady.com/2009/03/04/awesome-stuff-i-read</id>
+   <content type="html">&lt;p&gt;Turns out I'm fascinated by these articles enough to want to share them with my 2.5 readers, but not fascinated enough to actually write a huge amount about them.  Besides, the original articles say enough already, there's almost &lt;em&gt;nothing&lt;/em&gt; I could add to make them better:&lt;/p&gt;
+
+&lt;h3&gt;Vista Does Things Right but Very Wrong&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://drplokta.livejournal.com/109267.html&quot;&gt;http://drplokta.livejournal.com/109267.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Turns out Windows Vista fully implements &lt;a href=&quot;http://www.rfc-editor.org/rfc/rfc3484.txt&quot;&gt;RFC3484&lt;/a&gt;: Default Address Selection for Internet Protocol version 6 (IPv6), which I guess is cool.  However, part of that spec has been backported to IPv4, and it changes the way multiple A records on a DNS query are handled.  Wreaks havoc on the traditional round-robin DNS method.&lt;/p&gt;
+
+&lt;h3&gt;Let Employees Make Decisions&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://startuplessonslearned.blogspot.com/2009/03/employees-should-be-masters-of-their.html&quot;&gt;http://startuplessonslearned.blogspot.com/2009/03/employees-should-be-masters-of-their.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Eric Ries, co-founder and CTO of IMVU, talks about one of the better decisions they made: giving employees absolutely every bit of information possible and letting them use best judgement when making any decisions.  What this means is that when people argued about the &quot;best&quot; way to do something, they shared their data and assumptions, and situations where one person is just making empty assertions became painfully obvious.&lt;/p&gt;
+
+&lt;p&gt;Key quotes:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;[...] telling knowledge workers what to do is one of the biggest causes of mistakes, waste, and general low morale that I've ever seen.&lt;/p&gt;
+
+&lt;p&gt;[...] every person in the company has this job description: in any situation it is your responsibility, using your best judgement, to do what you think is in the best interests of the company.&lt;/p&gt;
+
+&lt;p&gt;If you know something isn't going to work, it's your 100% responsibility to speak up and prevent it from happening. That may lead to a lot of arguments, but that's what you want.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;This one's a winner in my book.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Your Tests Should Cover the Right Stuff</title>
+   <link href="http://joncanady.com/2009/02/17/your-tests-should-cover-the-right-stuff/"/>
+   <updated>2009-02-17T00:00:00-05:00</updated>
+   <id>http://joncanady.com/2009/02/17/your-tests-should-cover-the-right-stuff</id>
+   <content type="html">&lt;p&gt;I'm not a big fan of test-driven development anyway, but when I hear people clamor for 100% code coverage through tests, I want to weep for my profession.&lt;/p&gt;
+
+&lt;p&gt;Look, TDD is fine when applied in the maintenance stage.  You're writing new tests to cover bugs found in production, that's good.  But during development, TDD slows you down unnecessarily.  Half of the time, features change half-way through development anyway, or they change once users start interacting with them.  Writing tests for not-yet-finalized features doesn't seem like a prudent use of time.  Similarly, writing tests so that 100% of our code is covered is &lt;em&gt;absolutely&lt;/em&gt; a meaningless metric that just wasted a client's money.&lt;/p&gt;
+
+&lt;p&gt;Let me give you an example: &lt;a href=&quot;http://innova-partners.com&quot;&gt;the Company&lt;/a&gt; develops a tool where you punch in bunch of drug names and we give you a yearly total of the price for those drugs.  It's awesome: uses a little AJAX to smoothly add drugs to a list, fetches a bunch of data from a data-store, has a core of ridiculously complex business logic – nothing too out of the ordinary here.&lt;/p&gt;
+
+&lt;p&gt;When I'm writing this app, though, why would I write tests that cover things like &quot;I gave my Model id X, I'm expecting (1,2,3) to come back&quot;?  Unless I'm writing my own database abstraction library, that's code that should &lt;em&gt;already work&lt;/em&gt;, and that's out of scope for me anyway.&lt;/p&gt;
+
+&lt;p&gt;I'm an advocate of &lt;em&gt;Business-driven Tests&lt;/em&gt;: locate the part of the app that's pure business logic.  If it's not all holed up in one or more modules/classes/whatevers then make that so.  Then write tests that cover every sweet buttery nook and cranny.  Because when a bug is reported in the application, your database library is probably not the culprit, and that mound of business logic that's unique to your application probably is.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Thanks Linux</title>
+   <link href="http://joncanady.com/2009/02/17/thanks-linux/"/>
+   <updated>2009-02-17T00:00:00-05:00</updated>
+   <id>http://joncanady.com/2009/02/17/thanks-linux</id>
+   <content type="html">&lt;pre&gt;&lt;code&gt;[root@server html]# rm test/
+rm: cannot remove directory `test/': Is a directory
+[root@server html]# rmdir test/
+rmdir: test/: Not a directory
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: &lt;code&gt;test&lt;/code&gt; here is a symlink.  Also, where did the Internet's sense of humor go?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Plaintext Passwords Make Me Weep Hot Tears of Shame</title>
+   <link href="http://joncanady.com/2009/02/17/plaintext-passwords-make-me-weep-hot-tears-of-shame/"/>
+   <updated>2009-02-17T00:00:00-05:00</updated>
+   <id>http://joncanady.com/2009/02/17/plaintext-passwords-make-me-weep-hot-tears-of-shame</id>
+   <content type="html">&lt;p&gt;All around cool guy &lt;a href=&quot;http://techfoodhorsepower.com/&quot;&gt;Chris Green&lt;/a&gt; mentions via &lt;a href=&quot;http://twitter.com/cgreenoh/status/1219795104&quot;&gt;twitter&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;I &lt;em&gt;HATE&lt;/em&gt; it when you register a new account and the website emails you the login and password. STOP DOING THAT! ...WORDPRESS.COM!&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;h2&gt;Sending Vitals in Plaintext Is So Last Year&lt;/h2&gt;
+
+&lt;p&gt;A lot of people don't care about this, but they probably should.  Sending out an email with your password sitting right in in means anyone that happens to be watching network traffic can read your password.  It's like sending cash through the postal service: asking for trouble.&lt;br/&gt;
+&lt;/p&gt;
+
+&lt;p&gt;If you're not worried about that (I'm not) then worry about one of your idiot friends ganking your password out of your inbox and posting various horrible, NSFW images on your blog.&lt;/p&gt;
+
+&lt;p&gt;Maybe I just need better friends.&lt;/p&gt;
+
+&lt;h2&gt;Storing Vitals in Plaintext Should Be a Mortal Sin&lt;/h2&gt;
+
+&lt;p&gt;A lot of people don't care about this, but they absolutely should.  In the worst case, someone cracks Reddit's database and steals a whole slew of username/password combinations.&lt;/p&gt;
+
+&lt;p&gt;Or Reddit accidentally posts a dump online.&lt;/p&gt;
+
+&lt;p&gt;Or a Reddit intern leaves a backup tape in a car that gets stolen.&lt;/p&gt;
+
+&lt;p&gt;If you're not too worried, replace &quot;Reddit&quot; with &quot;Government&quot; above and remember that all of these things have happened already.&lt;/p&gt;
+
+&lt;p&gt;Seriously kids, it's 2009.  You think we'd have figured out this amateur-hour bullshit by now.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>

@@ -1,0 +1,126 @@
+<html>
+	<head>
+		<title>Multi-Developer Git Suggestions -- Jon Canady (dot com)</title>
+		<link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
+		<link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css" />
+		<link rel="alternate" type="application/atom+xml" href="/atom.xml">
+	</head>
+	<body>
+		<div id="header">
+	<h1>Jon Canady</h1>
+	<ul>
+		<li><a href="/">About</a></li>
+		<li><a href="/articles/">Bloggery</a></li>
+		<li><a href="http://github.com/joncanady">Projects</a></li>
+	</ul>
+</div>
+		<div id="content">
+			<h1>Multi-Developer Git Suggestions</h1>
+			<h2>Nov 08, 2009</h2>
+			
+			
+			
+			<div id="alert">
+				<p>This is an older post imported from my previous Wordpress blog. If you
+				find any errors, <a href="mailto:jon@joncanady.com">let me 
+				know</a>.</p>
+			</div>
+			
+			
+			
+			<p>Git's pretty simple to use when it's just you and your Github repo, but as developers increases, complexity increases.</p>
+
+<h2>Each Developer Has Her Own Branch</h2>
+
+<p>Make each developer on the team maintain their own branch where their changes initially go before being merged into <code>master</code>. Bonus: you can vet new developer's changes before they get pushed into whatever the production branch is.</p>
+
+<p>So, here's what I do:</p>
+
+<pre><code>jonc$ git checkout -b jonc
+</code></pre>
+
+<p>Create and switch to the branch <code>jonc</code>.</p>
+
+<pre><code>jonc$ git checkout master
+jonc$ git merge jonc
+</code></pre>
+
+<p>Merge all the changes from <code>jonc</code> into <code>master</code>
+(This, of course, works in reverse, if you need to pull new stuff from <code>master</code> into your personal branch)</p>
+
+<pre><code>jonc$ git push origin jonc:refs/heads/jonc
+</code></pre>
+
+<p>Now the <code>jonc</code> branch exists on Github.  Anyone else that wants to check out my work is free to do so:</p>
+
+<pre><code>otherdev$ git checkout --track -b jonc origin/jonc
+</code></pre>
+
+<h2>Features Have Their Own Branches</h2>
+
+<p>If a feature is going to take longer than one sitting to completely implement -- including tests -- then it goes in its own branch.  Every time I've excepted this rule I've regretted it later.</p>
+
+<pre><code>jonc$ git checkout -b bugfix_553
+</code></pre>
+
+<p>If you're going to be collaborating on something with another developer, create it remotely first, then both of you can push/pull from the get-go.</p>
+
+<pre><code>jonc$ git push origin origin:refs/heads/bugfix_553
+</code></pre>
+
+<p>That creates the remote branch, and any developer that wants to start working on it does the following:</p>
+
+<pre><code>jonc$ git fetch origin    
+jonc$ git checkout --track -b bugfix_553 origin/bugfix_553
+</code></pre>
+
+<p>When you're on the <code>bugfix_553</code> branch, pushes and pulls go to and from there instead of <code>master</code>.  When ready, you merge it into master as usual.  Once you're 100% done with the branch, delete it as normal (<code>git branch -d bugfix_553</code>) and remove it from the server if necessary:</p>
+
+<pre><code>jonc$ git push origin :heads/bugfix_553
+</code></pre>
+
+<p>No, that command isn't intuitive in the slightest.</p>
+
+<h2>Production Always Builds</h2>
+
+<p>The production branch should <em>never</em> have code in it that breaks.  Hopefully it's got a good test suite, and with any luck it doesn't incur much technical debt, but at the very least it needs to:</p>
+
+<ol>
+<li>Run</li>
+<li>Produce correct output</li>
+</ol>
+
+
+<p>This means that deployments can happen whenever. Developing directly in the production branch or merging changes prematurely means that if critical bugfixes need to go out <strong>now</strong> you can handle that without having to clean up messes first.</p>
+
+<p>Developers that consistently push bad code into the production branch should be beaten. Having some Continuous Integration process watching that branch isn't a bad idea either.</p>
+
+<p>(I've always used <code>master</code> as the production branch, but use whatever makes you feel good.)</p>
+
+
+			<div>
+				
+				<span>
+					<a rel="prev" href="/2009/08/07/flickr-is-not-your-backup-service/" 
+					title="View Flickr is Not Your Backup Service"
+					>&larr; Previous: Flickr is Not Your Backup Service</a>
+				</span>
+				
+				<br />
+				
+				<span>
+					<a rel="next" href="/2009/11/18/how-to-fix-a-shitty-project/" 
+					title="View How To Fix a Shitty Project"
+					>Next: How To Fix a Shitty Project &rarr;</a>
+				</span>
+				
+			</div> 
+
+			<div id="footer">
+	<p>Powered by <a href="http://github.com/mojombo/jekyll">Jekyll</a>; your visit consumed no database resources, and didn't need parsing. Isn't that awesome?</p>
+	<p>Blog post text is covered by this <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/us/">Creative Commons</a> license, everything else is mine.</p>
+</div>
+
+		</div>
+	</body>
+</html>
