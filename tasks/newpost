@@ -1,0 +1,80 @@
+#!/usr/bin/env ruby
+
+###
+# newpost -- creates a new Jekyll post
+# Change the blog_dir variable below, and you should be set.
+# For maximum win, put in ~/bin/ (and add that to your $PATH)
+#
+# Jon Canady, 2010. 
+# Covered by the WTFPL: http://sam.zoy.org/wtfpl/
+###
+
+require 'optparse'
+ 
+# omit the trailing slash, please
+blog_dir = "/Users/jonc/Sites/joncanady-blog" 
+
+
+options = {}
+
+optparse = OptionParser.new do |opts|
+
+  # banner
+  opts.banner = "Usage: newpost [options] \"title of post\""
+
+  options[:draft] = false
+  opts.on('-d', '--draft', 'Create post as a draft') do 
+    options[:draft] = true
+  end
+
+  options[:format] = :markdown
+  opts.on('-f', '--format FORMAT', 'Post is in [markdown|textile] (default markdown)') do |format|
+    valid_formats = %w(markdown textile)
+    puts opts && exit unless valid_formats.include?(format)
+    options[:format] = format
+  end
+
+  opts.on( '-h', '--help', 'Display this screen' ) do
+    puts opts
+    exit
+  end
+
+end
+
+
+
+begin
+optparse.parse!
+rescue OptionParser::InvalidOption => e
+  puts e
+  puts o
+  exit 1
+end
+ 
+if ARGV[0].nil?
+  optparse.display
+  exit 1
+end
+
+puts "Generating post..."
+
+date_prefix = Time.now.strftime("%Y-%m-%d")
+postname = ARGV[0].strip.downcase.gsub(/ /, '-')
+
+post_dir = options[:draft] ? '_drafts' : '_posts'
+
+post = "/Users/jonc/Sites/joncanady-blog/#{post_dir}/#{date_prefix}-#{postname}.#{options[:format]}"
+ 
+header = <<-END
+---
+layout: post
+title: #{ARGV[0]}
+---
+ 
+END
+ 
+File.open(post, 'w') do |f|
+  f << header
+end
+ 
+system("mate", "-a", post)
