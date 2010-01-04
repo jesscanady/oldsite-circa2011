@@ -9,11 +9,11 @@
 # Covered by the WTFPL: http://sam.zoy.org/wtfpl/
 ###
 
-require 'optparse'
- 
 # omit the trailing slash, please
 blog_dir = "/Users/jonc/Sites/joncanady-blog" 
 
+
+require 'optparse'
 
 options = {}
 
@@ -63,7 +63,7 @@ postname = ARGV[0].strip.downcase.gsub(/ /, '-')
 
 post_dir = options[:draft] ? '_drafts' : '_posts'
 
-post = "/Users/jonc/Sites/joncanady-blog/#{post_dir}/#{date_prefix}-#{postname}.#{options[:format]}"
+post = "#{blog_dir}/#{post_dir}/#{date_prefix}-#{postname}.#{options[:format]}"
  
 header = <<-END
 ---
