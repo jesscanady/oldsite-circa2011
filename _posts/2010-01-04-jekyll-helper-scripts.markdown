@@ -7,9 +7,9 @@ I have a couple of helper scripts that I couldn't use Jekyll without:
 
 ## deploy
 
-Shamelessly stolen from [The Pug Automatic](http://henrik.nyh.se/), it's pretty quick:
+Shamelessly stolen from [The Pug Automatic](http://henrik.nyh.se/), it's pretty quick (and all on one line, despite what word-wrapping occurs here):
 
-{% highlight bash %}
+{% highlight console linenos %}
 jekyll --no-auto && rsync -avz --delete _site/ blog:/pub/jcanady/joncanady.com/
 {% endhighlight %}
 
