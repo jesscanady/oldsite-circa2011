@@ -12,7 +12,7 @@ Man, Android's starting to look good. The interface is not *nearly* as polished 
 	* Third-party apps can use icon badges but they can't use the lock-screen notifications, so even if your twitter client is getting push notifications, it doesn't show on the home screen.
 	* Not to mention that I can't respond to an SMS without *quitting* what I'm doing. 
 
-* **3rd-Party App Backgrounding**: My iPhone Twitter client can't pull messages if it isn't running, I can't have Mobile Things sync with Desktop Things whenever without firing Mobile Things up.  And I can never have something like [Locale](http://www.twofortyfouram.com/), which is too awesome for words.
+* **3rd-Party App Backgrounding**: My iPhone Twitter client can't pull messages if it isn't running.  Things for iPhone can't update its dock badge without being run once, which makes the dock badge near-useless.  And I can never have something like [Locale](http://www.twofortyfouram.com/), which is too awesome for words.  
 
 * **Customization**: Hey Apple, why can I change my ringtone but not the New Mail, New SMS, or Calendar Alert sounds? Why can't I put a background *behind* the app icons? And why can't I replace the dialer with Google Voice? 
 
