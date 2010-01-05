@@ -1,3 +1,7 @@
+header, footer, nav, section, article {
+	display:block;
+}
+
 @font-face 
 {
 	font-family: "League Gothic";
@@ -16,54 +20,62 @@ body
 	font-size: 1.8em;
 }
 
-div#header
+header
 {
-	background: #B5C5D2;
+	background-color: #B5C5D2;
 	padding: .5em;
 	margin-bottom: 1em;
-	width: 35em;
 	text-align: center;
 	-moz-border-radius-bottomleft: 20px; -webkit-border-bottom-left-radius: 20px;
 	-moz-border-radius-bottomright: 20px; -webkit-border-bottom-right-radius: 20px;
-	margin-left: auto;
-	margin-right: auto;
+	border-radius: 20px;
 }
 
-h1
-{
-  letter-spacing: -2px;
-	color: #000;
-}
-
-div#header ul
+header ul
 {
 	margin-left: -2em;
 	font-size: 1.2em;
 }
-div#header ul li
+header ul li
 {
 	display: inline;
 	list-style-type: circle;
 	padding: 1em;
 }
-div#header ul li.first
+header ul li.first
 {
 	list-style-type: none;
 }
 
-div#header h1
+h1
 {
 	font-family: "League Gothic";
-	font-size: 4em;
+	font-size: 3em;
 	margin: 0;
+	letter-spacing: -2px;
+	color: #000;
 }
 
-div#header span.sub
+h2
+{
+	font-family: "League Gothic";
+	font-size: 2em;
+	margin: 0;
+	letter-spacing: -1px;
+	color: #000;
+}
+
+header h1 
+{
+	font-size: 4em;
+}
+
+header span.sub
 {
 	color: #E2E2E2;
 }
 
-#content
+body
 {
 	color: #333;
 	width: 35em;
@@ -94,7 +106,7 @@ ul.archive li
 
 
 
-#footer 
+footer 
 {
 	border-top: 1px solid #333;
 	padding-top: 1em;
@@ -103,7 +115,7 @@ ul.archive li
 	font-size: .8em;
 }
 
-#footer a.license
+footer a.license
 {
 	float: right;
 }

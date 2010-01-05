@@ -2,7 +2,8 @@
 layout: about
 title: Bloggery
 ---
-<h2>I've butchered the english language {{ site.posts.size }} times:</h2>
+<section id="archive">
+<h1>I've butchered the english language {{ site.posts.size }} times:</h1>
  
 <ul class="archive">
 {% for post in site.posts %}
@@ -11,3 +12,4 @@ title: Bloggery
   </li>
 {% endfor %}
 </ul>
+</section>

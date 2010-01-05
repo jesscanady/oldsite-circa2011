@@ -1,16 +1,21 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css" />
 		{% include head.html %}
 	</head>
 	<body>
+		
 		{% include header.html %}
-		<div id="content">
+		
+		<article>
+			
 			<h1>{{ page.title }}</h1>
-			<h2>{{ page.date | date: "%b %d, %Y"  }}</h2>
+			<time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>{{ page.date | date: "%d %b %Y"  }}</time>
+			
 			
 			{% if page.wordpress_id %}
-			
+						
 			<div id="alert">
 				<p>This is an older post imported from my previous Wordpress blog. If you
 				find any errors, <a href="mailto:jon@joncanady.com">let me 
@@ -21,7 +26,7 @@
 			
 			{{content}}
 
-			<div>
+			<nav>
 				{% if page.previous %}
 				<span>
 					<a rel="prev" href="{{ page.previous.url }}" 
@@ -37,10 +42,10 @@
 					>Next: {{ page.next.title }} &rarr;</a>
 				</span>
 				{% endif %}
-			</div> 
-
+			</nav> 
+			
+		</article>
+		
 			{% include footer.html %}
-
-		</div>
 	</body>
 </html>
