@@ -49,7 +49,7 @@ header ul li.first
 
 h1
 {
-	font-family: "League Gothic";
+	font-family: 'League Gothic';
 	font-size: 3em;
 	margin: 0;
 	letter-spacing: -2px;
@@ -58,7 +58,7 @@ h1
 
 h2
 {
-	font-family: "League Gothic";
+	font-family: 'League Gothic';
 	font-size: 2em;
 	margin: 0;
 	letter-spacing: -1px;
