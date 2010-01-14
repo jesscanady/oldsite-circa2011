@@ -3,6 +3,12 @@ layout: post
 title: If you have REST, why XML-RPC?
 ---
  
+## Update
+
+There's points going back and forth on [Hacker News](http://news.ycombinator.com/item?id=1052476) today -- I don't know if HN archives its threads forever, so if that link breaks let me know.
+
+## The original article follows
+
 There's a large re-architecture project for one of our products at work that's in the planning stages, and we're trying to decide between XML-RPC and REST for communication between two layers. The title of the post should make my bias pretty obvious.
 
 ## XML-RPC
