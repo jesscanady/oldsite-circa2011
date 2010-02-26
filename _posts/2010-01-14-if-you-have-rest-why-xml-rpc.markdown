@@ -5,7 +5,8 @@ title: If you have REST, why XML-RPC?
  
 ## Update
 
-There's points going back and forth on [Hacker News](http://news.ycombinator.com/item?id=1052476) today -- I don't know if HN archives its threads forever, so if that link breaks let me know.
+There's points going back and forth on [Hacker News](http://news.ycombinator.com/item?id=1052926) today -- I don't know if HN archives its threads forever, so if that link breaks let me know.
+
 
 ## The original article follows
 
