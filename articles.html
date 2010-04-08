@@ -3,13 +3,14 @@ layout: about
 title: Bloggery
 ---
 <section id="archive">
-<h1>I've butchered the english language {{ site.posts.size }} times:</h1>
- 
+
 <ul class="archive">
 {% for post in site.posts %}
   <li>
-    {{ post.date | date: "%d %B %Y"  }} &mdash; <a href="{{ post.url }}">{{ post.title }}</a>
+  	<a href="{{ post.url }}">{{ post.title }}</a>
+		<p>{{ post.date | date: "%d %B %Y"  }}</p>
   </li>
 {% endfor %}
 </ul>
+
 </section>

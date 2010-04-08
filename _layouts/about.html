@@ -7,13 +7,27 @@
 	
 	<body>
 		
-		{% include header.html %} 
+		<div class="row">
+			<div class="column grid_3">
+				{% include header.html %} 
+			</div>
 		
-		<section id="content">
-			{{content}}
-		</section>
+			<div class="column grid_1">
+				&nbsp;
+			</div>
+			
+			<div class="column grid_8">
+				<section id="content">
+							{{content}}
+				</section>
+			</div>
+		</div>
 		
-		{% include footer.html %}
+		<div class="row">
+			<div class="column grid_12">
+				{% include footer.html %}
+			</div>
+		</div>
 		
 	</body>
 </html>
