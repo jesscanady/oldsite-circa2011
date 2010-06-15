@@ -127,7 +127,8 @@ html {
 body
 {
 /*  background: #3A4047;*/
-  background: #222;
+/*  background: #222;*/
+  background: #003;
 	margin: 0;
 	font: 1.8em/27px 'DroidSansRegular', arial, sans-serif;
 	letter-spacing: 0;
