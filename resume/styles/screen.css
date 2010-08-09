@@ -1,0 +1,127 @@
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary { 
+    display:block;
+}
+
+body
+{
+  font-family: verdana, sans-serif;
+  margin: 0;
+  font-family: 'Droid Sans', arial, serif;
+}
+
+header
+{
+  background: black;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 40px;
+  color: #ccc;
+}
+
+h1, h2
+{
+  margin-top: 0;
+  letter-spacing: 3px;
+  font-family: 'Yanone Kaffeesatz', arial, serif;
+}
+
+h1
+{
+  font-size: 3em;
+}
+
+h2 
+{
+  font-size: 2em;
+}
+
+header table
+{
+  width: 100%;
+}
+header table td
+{
+  vertical-align: top;
+  width: 33%;
+}
+
+header ul
+{
+  list-style-type: square;
+  margin-left: -20px;
+}
+
+a { color: #ccc; }
+a:visited { color: #ccc; }
+a:hover { color: #111; background: #FF6; }
+
+#summary
+{
+  background: #003;
+  margin: 0;
+  font-family: 'Josefin Sans Std Light', arial, serif;
+  text-align: center;
+}
+
+#summary p
+{
+  margin: 0;
+  color: #ccc;
+  font-size: 2.4em;
+  padding: 40px;
+  line-height: 1.5em;
+}
+
+#content
+{
+  background: #003;
+  color: #ccc;
+  padding: 40px;
+  line-height: 1.5em;
+}
+
+span.date
+{
+  display: block;
+  font-size: .8em;
+}
+
+#content ul
+{
+  list-style-type: square;
+}
+
+div.position
+{
+  border-left: .3em solid #ccc;
+  padding-left: 1.5em;
+}
+
+div.position p
+{
+  font-style: italic;
+}
+
+div#tools
+{
+  float: right;
+  width: 300px;
+/*  background: rgba(255,255,255,.5);*/
+  background: #6A6B85;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+div#tools ul
+{
+  list-style-type: square;
+  line-height: 1.5em;
+}
+
+div#software td
+{
+   width: 33%;
+   vertical-align: top;
+}
