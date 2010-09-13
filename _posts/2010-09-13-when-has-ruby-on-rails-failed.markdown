@@ -26,5 +26,5 @@ Framework, they'd have seen the same problems.)
 So please, if you have any "Rails ruined my project" or "I tried to
 use Rails on a project, but it got in my way and I had to abandon it"
 stories, please email them to jon at this domain, or respond in the
-[Hacker News thread](). I'm curious how many are legitimate, and how
+[Hacker News thread](http://news.ycombinator.com/item?id=1687974). I'm curious how many are legitimate, and how
 many are "Rails isn't like my preferred Blub, so I can't use it."
