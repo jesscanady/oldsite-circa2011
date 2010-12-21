@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	<head>
-		{% include head.html %}
-	</head>
-	
-	<body>
-		
-		<div class="row">
-			<div class="column grid_3">
-				{% include header.html %} 
-			</div>
-		
-			<div class="column grid_1">
-				&nbsp;
-			</div>
-			
-			<div class="column grid_8">
-				<section id="content">
-							{{content}}
-				</section>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="column grid_12">
-				{% include footer.html %}
-			</div>
-		</div>
-		
-	</body>
+  <head>
+    {% include head.html %}
+  </head>
+  
+  <body>
+      <div id="page">
+
+        {% include nav.html %}
+
+        <header>
+          <h1>I'm Jon Canady</h1>
+        </header>
+        
+        <!-- {% include nav.html %}  -->
+        
+        <section id="content">
+          {{content}}
+        </section>
+        
+        {% include footer.html %}
+
+    </div>
+  </body>
 </html>
