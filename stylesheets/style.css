@@ -115,7 +115,7 @@ nav ul li a:hover
 #content
 {
     z-index: 10;
-    width: 440px;
+    width: 550px;
     text-align: justify;
     margin-left: auto;
     margin-right: auto;
@@ -191,21 +191,17 @@ header ul, #archive ul
 }
 header ul li, #archive ul li
 {
-/*  display: inline;*/
 	list-style-type: none;
-	margin-left: -1.8em;
 }
 
 header ul li a, #archive ul li a
 {
-  margin-bottom: 0;
-  line-height: 0;
-  font-size: .9em;
+  margin-top: 1.5em;
 }
 
 header ul li p, #archive ul li p
 {
-  margin-top: 0;
+  margin-top: 5px;
   font-size: .7em;
   color: #bbb;
   line-height: 1em;
